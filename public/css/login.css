@@ -1,0 +1,116 @@
+@import url("/css/colors.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.login-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.login-cont .error {
+  text-align: center;
+  color: red;
+}
+
+.login-cont h1 {
+  margin: 0px 0 -0.125rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  color: #202124;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.login-cont .input-field {
+  position: relative;
+}
+
+.login-cont .input-field input {
+  width: 93%;
+  padding: 0.625rem 10px;
+  font-size: 1rem;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.login-cont .input-field label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: grey;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-cont .input-field input:valid ~ label,
+.login-cont .input-field input:focus ~ label,
+.login-cont .input-field input:not(:placeholder-shown) ~ label {
+  top: -1.125rem;
+  left: 10px;
+  color: var(--dodger-600);
+  font-size: 0.75rem;
+  background-color: white;
+  height: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.login-cont .input-field input:focus {
+  outline: none;
+  border: 2px solid var(--dodger-600);
+}
+
+.login-cont:has(.error) .input-field input:placeholder-shown {
+  border: 1px solid red;
+}
+
+.login-cont input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--dodger-600);
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+  float: right;
+}
+
+.login-cont input[type="submit"]:hover {
+  background-color: var(--dodger-500);
+  box-shadow: 0 1px 1px 0 var(--dodger-400), 0 1px 3px 1px var(--dodger-300);
+}
+
+.login-cont .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-cont {
+    padding: 1.75rem;
+    width: 90vw;
+  }
+}

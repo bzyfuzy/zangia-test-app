@@ -1,0 +1,135 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 150px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 10px;
+}
+
+.header .title-container {
+  width: 15%;
+}
+
+.header .action-buttons-container {
+  width: 10%;
+}
+
+.header .timer-container {
+  display: flex;
+  width: 15%;
+}
+
+.process-bar-container {
+  flex: 1;
+}
+
+.process-bar-background {
+  background: var(--dodger-50);
+  height: 15px;
+  border-radius: 10px;
+}
+
+.process-bar-indicator {
+  width: 20%;
+  background-color: var(--dodger-600);
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  position: relative;
+}
+
+.process-bar-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -2px);
+  margin: 0px;
+  color: white;
+}
+
+.exam {
+  background-color: var(--dodger-50);
+  width: 100%;
+  padding: 30px 60px;
+}
+
+.question-container {
+  border-bottom: 1px solid black;
+  padding: 15px 30px;
+}
+
+.question-title {
+  font-size: 1.45em;
+  margin-bottom: 12px;
+}
+
+.question-text {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 30px;
+  padding-top: 35px;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--dodger-900);
+  padding-right: 0.75rem;
+  border-radius: 5px;
+}
+
+.answer p {
+  padding: 5px 0px;
+  margin-left: 1.75rem;
+}
+
+.footer-action-buttons {
+  gap: 20px;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.footer-action-buttons button {
+  background-color: var(--dodger-800);
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.footer-action-buttons #next-button {
+  background-color: var(--dodger-800);
+  color: white;
+}
+
+.footer-action-buttons #finish-button {
+  background-color: var(--dodger-800);
+  color: white;
+  margin-left: 100px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.result {
+}
+.back {
+  display: none;
+}
+.exam .loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 0px;
+}
